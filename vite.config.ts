@@ -13,7 +13,12 @@ export default defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+
   server: {
     allowedHosts: true,
+  },
+
+  build: {
+    cssMinify: "esbuild",
   },
 });
